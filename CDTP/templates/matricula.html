@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Inscrição curso/inscricao.css">
+    <script src="../js/lista.js"></script>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <title>CDTP</title>
+</head>
+<body>
+    <navbar>
+        <header>
+    
+            <div class="navbar">
+                <h1>CDTP</h1>
+            </div>
+    
+                <ul class="ptop">
+                    <button onclick="irinicio()" id=botaoc class="binicio">Ínicio</button>
+                    <button onclick="ircursos()" id=botaoc class="bcursos">Cursos</button>
+                    <button onclick="irlista()" id=botaoc class="bsb">Suas Metas</button>
+                    <button onclick="irlogin()" id=botaoc class="blogin">Login</button>
+                </ul>
+    
+        </header>
+        </navbar>
+    
+    <h1 style="color: #6224d5;">Matricula CDTP</h1>
+    <fieldset>
+        <legend><strong>Qual curso você deseja fazer?</strong></legend>
+        <label for="tcurso">Curso:</label>
+        <select id="tcurso">
+            <option value="">FRONT-END</option>
+            <option value="">PROGRAMAÇÂO</option>
+            <option value="">IA</option>
+        </select>
+    </fieldset>
+      <hr>
+      <fieldset>
+      <label for="nome">Nome:</label>
+      <input type="nome" minlength="ll" id="nome" />
+
+      <label for="data_nascimento">Data de nascimento:</label>
+      <input type="date" id="data_nascimento"/>
+
+      <label for="cpf">CPF:</label>
+      <input type="cpf" minlength="ll" id="cpf" />
+      </fieldset>
+    <hr>
+    
+        <fieldset>
+            <label for="tsexo">Sexo:</label>
+            <select id="tsexo">
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+            </select>
+            <label for="tcor">Cor/Raça</label>
+            <select id="tcor">
+                <option value="">Branco(a)</option>
+                <option value="">Preto(a)</option>
+                <option value="">Pardo(a)</option>
+                <option value="">Amarelo(a)</option>
+            </select>
+            <label for="tnal">Nacionalidade:</label>
+            <select id="tnal">
+                <option value="">Brasileiro(a)</option>
+                <option value="">Outro(a)</option>
+            </select>
+            <label for="tcivil">Estado Civil</label>
+            <select id="tcivil">
+                <option value="">Solteiro(a)</option>
+                <option value="">Casado(a)</option>
+                <option value="">Divorciado(a)</option>    
+            </select>
+                       
+        </fieldset>
+    <fieldset>
+        <legend><strong>Informe o estado e cidade onde você nasceu</strong></legend>
+        <label for="tuf">UF:</label>
+        <select id="tuf">
+            <option value="">PE</option>
+        </select>
+        <label for="tmunicipio">Município:</label>
+        <select id="tmunicipio">
+            <option value="">Recife</option>
+            <option value="">Olinda</option>
+            <option value="">Jaboatão</option>
+            <option value="">Camaragibe</option>
+        </select>
+    </fieldset>
+    
+    
+    <hr>
+
+    <fieldset>
+                
+        <legend><strong>Informe sua escolaridade</strong></legend>
+        
+            <label for="opcao5">
+                <input type="checkbox" id="opcao5" name="opcoes" value="opcao5">
+                Já conclui o ensino médio
+            </label><br>
+            <label for="opcao6">
+                <input type="checkbox" id="opcao6" name="opcoes" value="opcao6">
+                Estou cursando a última série/ano do ensino médio
+            </label><br>
+            <label for="opcao7">
+                <input type="checkbox" id="opcao7" name="opcoes" value="opcao7">
+                Estou cursando o ensino médio, mas não estou na última série/ano
+            </label><br>
+            <label for="opcao8">
+                <input type="checkbox" id="opcao8" name="opcoes" value="opcao8">
+                Não estou cursando e não concluí o ensino médio.
+            </label><br>
+       
+    </fieldset>
+    
+    <fieldset>
+        <legend><strong>Informe um telefone para contato ou um e-mail</strong></legend>
+        <label for="celular">Celular:</label>
+            <input type="text" minlength="l" id="celular">
+        <label for ="e-mail"> E-mail: </label>
+            <input type="text" minlength="l" id="e-mail">  
+    </fieldset>
+    <hr>
+    <a href="../LandingPage/Lp.html"><button onclick="enviar()" class="contact-btn"> Enviar</button></a>
+    <input type="reset" value="Limpar" class="limpar">
+
+</form>
+<h2 style="color: #6224d5;">Calendário do CDTP:</h2>
+            <ul>
+                <li><b>Inscrições: </b>5 a 16 de junho</li>
+                <li><b>Aplicação das provas: </b>5 e 12 de novembro</li>
+                <li><b>Divulgação dos gabaritos: </b>24 de novembro</li>
+                <li><b>Resultado: </b>16 de janeiro de 2024</li>
+            </ul>
+            <hr>
+    
+            <script src="{{ url_for('static', filename='js/dev.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <title>CURSO CDTP</title>
+</head>
+<body>
+    <navbar>
+    <header>
+
+        <div class="navbar">
+            <h1>CDTP</h1>
+        </div>
+
+            <ul class="ptop">
+                <button onclick="irinicio()" id=botaoc class="binicio">Ínicio</button>
+                <button onclick="ircursos()" id=botaoc class="bcursos">Cursos</button>
+                <button onclick="irlista()" id=botaoc class="bsb">Suas Metas</button>
+                <button onclick="irlogin()" id=botaoc class="blogin">Login</button>
+            </ul>
+
+    </header>
+    </navbar>
+
+    <main>
+        <aside>
+            <h2>Inscreva-se agora</h2>
+            <h2>no <span>CDTP</span></h2>
+            <p class="text1">
+                Nosso curso tem o intuito de ensinar a vocês amantes da tecnologia, as princiais linguagens de programação
+                do mercado para assim arrumar seu emprego dos sonhos!!! 
+            </p>
+            <button onclick="irmatricula()" id=botaoc class="contact-btn">Matricule-se</button>
+        </aside>
+
+        <article>
+            <img class="robotimg" src="../static/images/robotics-animate.svg" alt="robotics-animate">
+        </article>
+    </main>
+
+    <section id="section1">
+        <h1 class="titulo2">Qual <span>tecnologia</span> você quer aprender?</h1>
+        <div class="servicos">
+            <div class="card">
+                <img src="../static/images/python (1) (1).png">
+                <div class="card-text">
+                    <h3 style="color: #fc1a60;">PROGRAMAÇÃO</h3>
+                    <p style="color: white;">Lógica, Python, C, Java, PHP, Node JS</p>
+                </div>
+            </div>
+               
+            <div class="card">
+                <img src="../static/images/programacao (1) (1).png">
+                <div class="card-text">
+                    <h3 style="color: #fc1a60;">FRONT-END</h3>
+                    <p style="color: white;">HTML, CSS, JavaScript, React</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="../static/images/inteligencia-artificial (1).png">
+                <div class="card-text">
+                    <h3 style="color: #fc1a60;">INTELIGÊNCIA ARTIFICIAL</h3>
+                    <p style="color: white;">IA para programação</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="medsite">
+        <h2>A área de <span>TECNOLOGIA</span> é a que mais cresceu nos últimos anos</h2>
+    </div>
+
+    <section>
+        <div class="servicos2">
+            <div class="info2">
+                <div class="card-text2">
+                    <h3 style="color: #fc1a60;">9 dos 15</h3>
+                    <p style="color: white;">De acordo com o LinkedIn, 9 dos 15 cargos destacados de profissões em alta pertenciam à área de tecnologia</p>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="card-text2">
+                    <h3 style="color: #fc1a60;">Mercado aquecido!</h3>
+                    <p style="color: white;">Só em 2022, o setor de TI cresceu 22,9% no Brasil comparado a 2021, que já vinha de um crescimento de 23% sobre 2020. </p>
+                </div>
+
+            </div>
+
+            <div class="info2">
+                <div class="card-text2">
+                    <h3 style="color: #fc1a60;">6,2% para mais!</h3>
+                    <p style="color: white;">O gasto global com TI deve alcançar US$ 5,2 trilhões em 2024, um aumento de 6,2% em relação a 2023</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <footer id="fim">
+        <h1>Desenvolvimento Web</h1>
+        <p>Alunos:</p>
+        <p>Ítalo Rodrigues</p>
+        <p>Antônio Lucas</p>
+        <p>João Monteiro</p>
+        <p>Arthur Moraes</p>
+        <h1>Projeto: Curso EAD de programação</h1>
+    </footer>
+    <script src="{{ url_for('static', filename='js/dev.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

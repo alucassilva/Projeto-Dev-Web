@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../statics/main.css">
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <navbar>
+        <header>
+    
+            <div class="navbar">
+                <h1>CDTP</h1>
+            </div>
+    
+                <ul class="ptop">
+                    <button onclick="irinicio()" id=botaoc class="binicio">Ínicio</button>
+                    <button onclick="ircursos()" id=botaoc class="bcursos">Cursos</button>
+                    <button onclick="irlista()" id=botaoc class="bsb">Suas Metas</button>
+                    <button onclick="irlogin()" id=botaoc class="blogin">Login</button>
+                </ul>
+    
+        </header>
+        </navbar>
+    <div class="main-login"> 
+        <div class="left-login">
+            <h1>Faça Login<br> <span>Entre para nossa equipe!</span></h1>
+            <img src="{{ url_for('static', filename='images/robo.svg') }}" class="left-login-image" alt="Roboinicial">
+        </div>
+        <div class="right-login">
+            <form action="/login" method="post" class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="nome" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dev.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>            
+</body>
+</html>

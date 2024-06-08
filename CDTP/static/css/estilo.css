@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color: #282729;
+    color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: "Chakra Petch";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bcursos{
+    display: inline-block;
+    background-color:  #282729;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: none;
+    cursor: pointer;
+}
+.binicio{
+    display: inline-block;
+    background-color:  #282729;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: none;
+    cursor: pointer;
+}
+
+.bsb{
+    display: inline-block;
+    background-color:  #282729;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: none;
+    cursor: pointer;
+}
+
+.blogin{
+    display: inline-block;
+    background-color: #6224d5;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.navbar > h1{
+    background-color: #6224d5;
+    color: white;
+    font-family: "Chakra Petch";
+    font-size: 50px;
+}
+
+.navbar{
+    flex-direction: column;
+    line-height: 60px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    flex-direction: column;
+}
+
+aside > h2 > span{
+    color: #fc1a60;
+    font-size: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 50px;
+    font-family: "Chakra Petch";
+    line-height: 20px;
+    color: #ffffff;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: "Chakra Petch";
+}
+
+.robotimg{
+    width: 500px;
+    margin-left: 300px ;
+}
+
+article{
+    width: 500px;
+}
+
+a{
+    color: white;
+    font-family: "Chakra Petch";
+    text-decoration: none;
+}
+
+.contact-btn{
+    display: inline-block;
+    background-color: #6224d5;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    color: white;
+}
+
+a:hover{
+    color: #6224d5;
+    transition: 0.3s all;
+}
+
+#inscrever{
+    border: 2px solid #6224d5;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscrever:hover{
+    background-color: #6224d5;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.titulo2{
+    color: white;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    font-size: 64px;
+    font-family: "Chakra Petch";
+}
+
+.titulo2 > span{
+    background-color: #fc1a60;
+}
+
+.text1{
+    font-family: "Chakra Petch";
+}
+
+section{
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px solid none;
+    padding: 4%;
+    text-align: center;
+    width: 90%;
+
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    color:white;
+}
+
+.card{
+    display: inline-block;
+    width: 26%;
+    padding: 20px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+                margin: 1%;
+                color: rgb(176, 9, 78);
+                border: 5px solid #6224d5;
+                cursor: pointer;
+
+                text-decoration: none;
+}
+
+
+
+.card-text{
+    text-decoration: none;
+}
+
+.medsite > h2{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.medsite > h2 > span{
+    background-color: #fc1a60;
+}
+
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-new-task{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-new-task:hover{
+    background-color: var(--color-dark3);
+}
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#to-do-list li:hover{
+    background-color: var(--color-dark3);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: var(--color-green2);
+}
+
+.info2{
+    display: inline-block;
+    width: 26%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 1%;
+    color: rgb(176, 9, 78);
+    border: 4px solid #6224d5;
+    text-transform: uppercase;
+}
+
+.servicos2{
+    margin-bottom: 150px;
+}
+
+h2 > strong{
+    color: #fc1a60;
+}
